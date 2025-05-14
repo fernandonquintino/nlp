@@ -1,0 +1,25 @@
+# Python cache & compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints
+
+# Jupyter notebooks checkpoints
+*.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.env
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Notebook metadata
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
