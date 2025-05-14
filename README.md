@@ -48,12 +48,16 @@ project/
 ```
 ## Row to run
 
-* Clone the repository
+### Clone the repository
+```bash
+git clone git@github.com:fernandonquintino/nlp-review-classification.git
+cd nlp-review-classification
+```
 
-Retrain everything:
+### Retrain everything:
 * Open a terminal (ensure you are in the main folder) and type python main.py
 
-Make predictions
+### Make predictions
 * Open notebook 7_predictions.ipynb (it loads the models, make predictions and also save the data on the results file)
 * Execute 6_predictions.py (also executed in the main.py)
 
@@ -63,7 +67,9 @@ Make predictions
 * For practical use the suggested model is the BERT Sentence Embeddings + Logistic Regression. If more time or processing is available, then the suggestions if to use Fine-tuned BERT
 * Results for all models are in the data/results/ folder. All results are in the file results_test.csv. Best_results.csv (fine-tuned bert) and practical_results.csv (bert embedding + lr) are for direct conference (columns: text/prediction)
 * Raw data has | as separators. It should be loaded in a ipynb file as:
- 
+
+ ```
 df_test = pd.read_csv('data/raw/dataset_valid.csv', sep='|') # (same for dataset_train.csv)
 df_test = df_test.iloc[:, 1:]
 df_test.rename(columns={'input': 'text'}, inplace=True)
+```
