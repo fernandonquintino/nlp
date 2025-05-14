@@ -67,7 +67,8 @@ cd nlp
 
 ## Important observations
 
-* This project uses OpenRouter API and paid models. You have to create a .env file: with the following OPENROUTER_API_KEY=123abc (place your key here)
+* This project uses OpenRouter API and paid models. You have to create a .env file: with the following OPENROUTER_API_KEY=123abc (place your key here).
+* You may avoid this by simply commenting '1_label_target.py' in the main.py file (it create labels for the training set - those are already in the data/processed/ folder)
 * For practical use the suggested model is the BERT Sentence Embeddings + Logistic Regression. If more time or processing is available, then the suggestions if to use Fine-tuned BERT
 * Results for all models are in the data/results/ folder. All results are in the file results_test.csv. Best_results.csv (fine-tuned bert) and practical_results.csv (bert embedding + lr) are for direct conference (columns: text/prediction)
 * Raw data has | as separators. It should be loaded in a ipynb file as:
