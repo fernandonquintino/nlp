@@ -10,7 +10,7 @@ This project builds a reproducible restaurant review classificator using the fol
 * bert_ls (BERT embeddings + Logistic Regression)
 * bert_clf (Fine-tuned BERT)
 
-It takes the text provided and return a number 0 (negative) and 1 for positive. 
+It takes the text provided and return a number 0 (negative review) and 1 (positive review). 
 
 Then file notebooks/notebook 7_predictions.ipynb shows how to use the models and folder data/results/ has all predictions.
 
