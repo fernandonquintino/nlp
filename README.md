@@ -1,6 +1,6 @@
 # NLP Review Classification Pipeline
 
-This project builds a **reproducible, modular pipeline for restaurant review classification** using the following models:
+This project builds a reproducible restaurant review classificator using the following models:
 
 * dummy (always predicts 1)
 * bow_lr (Bag-of-words + Logistic Regression)
@@ -10,7 +10,11 @@ This project builds a **reproducible, modular pipeline for restaurant review cla
 * bert_ls (BERT embeddings + Logistic Regression)
 * bert_clf (Fine-tuned BERT)
 
-It includes all steps from **labeling, preprocessing, enrichment, feature engineering, and model training**, managed via a **single `main.py` script**.
+It takes the text provided and return a number 0 (negative) and 1 for positive. 
+
+Then file notebooks/notebook 7_predictions.ipynb shows how to use the models and folder data/results/ has all predictions.
+
+The project includes all steps from **labeling, preprocessing, enrichment, feature engineering, and model training**, managed via a **single `main.py` script**.
 
 ## Project Structure
 ```
