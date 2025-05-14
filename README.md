@@ -50,8 +50,8 @@ project/
 
 ### Clone the repository
 ```bash
-git clone git@github.com:fernandonquintino/nlp-review-classification.git
-cd nlp-review-classification
+git clone git@github.com:fernandonquintino/nlp.git
+cd nlp
 ```
 
 ### Retrain everything:
