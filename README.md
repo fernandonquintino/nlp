@@ -13,7 +13,7 @@ This project builds a **reproducible, modular pipeline for restaurant review cla
 It includes all steps from **labeling, preprocessing, enrichment, feature engineering, and model training**, managed via a **single `main.py` script**.
 
 ## Project Structure
-
+```
 project/
 ├── data/ # Raw and processed datasets (also uses a dictionary)
 │ └── dictionaries/
@@ -45,7 +45,7 @@ project/
 ├── 5_train_models.py # Train all models
 ├── main.py # Runs the full pipeline (venv + requirements + steps)
 └── requirements.txt
-
+```
 ## Row to run
 
 * Clone the repository
